@@ -61,7 +61,7 @@ char *my_strncat(char *dest, char *src, int max_bytes)
  * my_strchr - Custom character search in a string
  * @str: The string to search
  * @character: The character to search
- * Return: A pointer to the memory area having the character or NULL if not found
+ * Return:pointer to the memory area having the character or NULL if not found
  */
 char *my_strchr(char *str, char character)
 {
