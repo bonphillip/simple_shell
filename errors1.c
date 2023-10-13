@@ -2,22 +2,22 @@
 
 /**/
 int stringToInteger(char *str) {
-    int index = 0;
-    unsigned long int result = 0;
+int index = 0;
+unsigned long int result = 0;
 
-    if (*str == '+')
-        str++;
-    for (index = 0; str[index] != '\0'; index++) {
-        if (str[index] >= '0' && str[index] <= '9') {
-            result *= 10;
-            result += (str[index] - '0');
-            if (result > INT_MAX)
-                return -1;
-        } else {
-            return -1;
-        }
-    }
-    return (int)result;
+if (*str == '+')
+str++;
+for (index = 0; str[index] != '\0'; index++) {
+if (str[index] >= '0' && str[index] <= '9') {
+result *= 10;
+result += (str[index] - '0');
+if (result > INT_MAX)
+return -1;
+} else {
+return -1;
+}
+}
+return (int)result;
 }
 
 void printErrorMessage(info_t *info, char *errorString) {
